@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Flask Form</title>
+</head>
+<body>
+    <h1>Simple Flask Form</h1>
+    <form action="/" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>Hello, {{ name }}! Your email address is {{ email }}.</p>
+</body>
+</html>
